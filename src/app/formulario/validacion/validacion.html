@@ -1,0 +1,35 @@
+<p>validacion works!</p>
+
+<div class="col-6">
+    <div class="mmb-3">
+
+        <form>
+
+            <div class="form-group pt-4">
+                <label for="usuario">Usuario:</label>
+                <input [(ngModel)]="usuario"type="text"name="num1"class="form-control"id="num1"placeholder="Ingrese el usuario">
+            </div>
+
+            <br>
+
+            <div class="form-group pt-4">
+                <label for="contrasena">Contraseña:</label>
+                <input [(ngModel)]="contrasena"type="text"name="num2"class="form-control"id="num2"placeholder="Ingrese la contraseña">
+            </div>
+
+            <br>
+
+
+            <button (click)="validar()"
+                    type="button"
+                    class="btn btn-primary">
+                Iniciar Sesión
+            </button>
+
+        </form>
+
+    </div>
+</div>
+<div class="col-6">
+    <h2>{{resultado}}</h2>
+</div>

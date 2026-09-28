@@ -1,0 +1,65 @@
+<p>triangulos works!</p>
+
+<div>
+
+    <form>
+
+        <h3>Punto A</h3>
+
+        <label>X:</label>
+        <input [(ngModel)]="x1" type="number" name="x1">
+
+        <br><br>
+
+        <label>Y:</label>
+        <input [(ngModel)]="y1" type="number" name="y1">
+
+        <br><br>
+
+        <h3>Punto B</h3>
+
+        <label>X:</label>
+        <input [(ngModel)]="x2" type="number" name="x2">
+
+        <br><br>
+
+        <label>Y:</label>
+        <input [(ngModel)]="y2" type="number" name="y2">
+
+        <br><br>
+
+        <h3>Punto C</h3>
+
+        <label>X:</label>
+        <input [(ngModel)]="x3" type="number" name="x3">
+
+        <br><br>
+
+        <label>Y:</label>
+        <input [(ngModel)]="y3" type="number" name="y3">
+
+        <br><br>
+
+        <button (click)="analizar()" type="button">
+            Analizar Puntos
+        </button>
+
+    </form>
+
+</div>
+
+<div>
+
+    <h2>{{resultado}}</h2>
+
+    <div *ngIf="area > 0">
+
+        <p>Punto A: ({{x1}}, {{y1}})</p>
+        <p>Punto B: ({{x2}}, {{y2}})</p>
+        <p>Punto C: ({{x3}}, {{y3}})</p>
+
+        <p>Área: {{area}} unidades cuadradas</p>
+
+    </div>
+
+</div>

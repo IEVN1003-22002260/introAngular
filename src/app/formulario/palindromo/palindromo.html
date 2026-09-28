@@ -1,0 +1,36 @@
+<p>palindromo works!</p>
+
+<div class="col-6">
+    <div class="mmb-3">
+
+        <form>
+
+            <label>Escriba una frase:</label>
+               <div class="form-group pt-4">
+                <label for="frase"></label>
+                <input [(ngModel)]="texto" type="text" name="texto" class="form-control">
+            </div>
+            <br>
+            
+
+            <button (click)="calcular()"
+                    type="button"
+                    class="btn btn-primary">
+                Verificar
+            </button>
+
+        </form>
+
+    </div>
+</div>
+<div class="col-6">
+    <h2>El numero de vocales es: {{vocales}}</h2>
+</div>
+
+<div class="col-6">
+    <h2>El numero de consonantes es: {{consonantes}}</h2>
+</div>
+
+<div class="col-6">
+    <h2>La frase es un palindromo: {{resultado}}</h2>
+</div>
